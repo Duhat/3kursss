@@ -1,0 +1,78 @@
+/*
+bg #000
+orange #ff9501
+grey #a6a6a6
+white #fdfdfd
+*/
+
+.calc{
+    width: 300px;
+    height: 500px;
+    /*border: 1px solid black;*/
+    border-radius: 20px;
+    background:black;
+    color: #fff;
+    font-family: Arial;
+    
+    padding: 20px;
+    margin: 50px auto;
+
+}
+
+.screen{
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 20px;
+
+
+}
+
+.screen p{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "ac sign abs div"
+    "seven eight nine mult"
+    "four five six min"
+    "one two three plus"
+    "zero plus_b eq is";
+
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    background: #a6a6a6;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.btn:hover{
+    filter: brightness(120%);
+}
+.btn:active{
+    filter: brightness(90%);
+}
+
+.btn.grey{
+    background: #333;
+}
+.btn.orange{
+    background: #ff9501;
+}
+
